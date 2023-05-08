@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Rotating Circle</title>
+    <link rel="stylesheet" type="text/css" href="circle.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            padding: 20px 0px;
+            font-family: Arial;
+        }
+
+        main {
+            height: 500px;
+            display: grid;
+            align-items: center;
+        }
+
+        main img {
+            width: 200px;
+            height: 200px;
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            border-radius: 100%;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg) translateX(80px) rotate(0deg)
+            }
+
+            to {
+                transform: rotate(360deg)translateX(80px) rotate(-360deg)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Rotating Circle</h1>
+
+    <main>
+        <div>
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="circle">
+        </div>
+    </main>
+</body>
+
+</html>
